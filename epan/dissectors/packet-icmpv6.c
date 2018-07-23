@@ -2617,7 +2617,6 @@ dissect_icmpv6_rpl_opt(tvbuff_t *tvb, int offset, packet_info *pinfo, proto_tree
                               opt_offset += 1;
                               metric_len -= 1;
 
-
                               /* TLV data */
                               proto_tree_add_item(metric_nsa_tlv_tree, hf_icmpv6_rpl_opt_metric_nsa_object_opttlv_object_data, tvb, opt_offset, nsa_tlv_len, ENC_NA);
                               opt_offset += nsa_tlv_len;
